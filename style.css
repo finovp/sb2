@@ -82,6 +82,8 @@
     font-size: 4rem;
     line-height: 5rem;
     padding-bottom: 1.5rem;
+    animation: moveInFromLeft 2s;
+    animation-fill-mode: backwards;
 }
 .header-main-content {
     padding-top: 15rem;
@@ -102,8 +104,32 @@
     font-size: 1rem;
     padding: 12px 25px;
     border-radius: 100px;
+    animation: moveInFromBottom 2s 1.2s;
+    animation-fill-mode: backwards;
 }
 
+
+@keyframes moveInFromLeft {
+    0% {
+        transform: translateX(-10rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveInFromBottom {
+    0% {
+        transform: translateY(10rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 @media (max-width: 724px) { 
     .we-create {
@@ -198,4 +224,21 @@ box-shadow:         8px 8px 22px 0px rgba(50, 50, 50, 0.27);
         right: 0px;
     }
     
+}
+
+
+
+
+
+
+.img2 {
+    background-image: url(images/grp.jpg);
+    background-image: linear-gradient(to right bottom, #000000c5, #000000b7), url(images/grp.jpg);
+   background-attachment: fixed;
+  background-position: center; 
+    /* /background-repeat: no-repeat; */
+    background-size: cover;
+    height: 30vh;
+    //width: 100vw;
+    box-sizing: border-box;
 }
