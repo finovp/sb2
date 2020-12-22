@@ -104,7 +104,7 @@
     font-size: 1rem;
     padding: 12px 25px;
     border-radius: 100px;
-    animation: moveInFromBottom 2s 1.3s;
+    animation: moveInFromBottom 2s 1.6s;
     animation-fill-mode: backwards;
 }
 
