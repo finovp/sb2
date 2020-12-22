@@ -1,6 +1,6 @@
 var q = 0;
 var txt = 'We technology for the greater good.';
-var speed = 40;
+var speed = 50;
 //document.getElementById("wec").innerHTML = " ";
 
 
